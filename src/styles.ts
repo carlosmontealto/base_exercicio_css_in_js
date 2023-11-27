@@ -1,9 +1,12 @@
-:root {
-  --cor-principal: #a7727d;
-  --cor-secundaria: #f9f5e7;
+import { createGlobalStyle } from 'styled-components'
+
+export const cores = {
+  principal: '#a7727d',
+  secundaria: '#f9f5e7'
 }
 
-* {
+export const GlobalCss = createGlobalStyle`
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,3 +29,5 @@ body {
     max-width: 80%;
   }
 }
+
+`
